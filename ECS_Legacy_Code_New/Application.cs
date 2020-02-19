@@ -1,4 +1,4 @@
-﻿namespace ECS.Legacy
+﻿namespace ECS_Legacy_Code_New
 {
     public class Application
     {

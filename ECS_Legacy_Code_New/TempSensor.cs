@@ -1,7 +1,7 @@
 ﻿using System;
 using ECS_Legacy_Code_New;
 
-namespace ECS.Legacy
+namespace ECS_Legacy_Code_New
 {
     internal class TempSensor : ITempSensor
     {
