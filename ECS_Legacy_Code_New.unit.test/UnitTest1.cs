@@ -15,6 +15,9 @@ namespace ECS_Legacy_Code_New.unit.test
         [SetUp]
         public void Setup()
         {
+            _uut = new ECS();
+            _heater = new fakeHeater();
+            _tempSensor = new fakeTempSensor();
         }
 
         [Test]

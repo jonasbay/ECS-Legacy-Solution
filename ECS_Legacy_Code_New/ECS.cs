@@ -1,6 +1,6 @@
 ﻿using ECS_Legacy_Code_New;
 
-namespace ECS_Legacy_Code_New
+namespace ECS.Legacy
 {
     public class ECS
     {
