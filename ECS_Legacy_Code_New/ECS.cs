@@ -22,7 +22,7 @@ namespace ECS_Legacy_Code_New
                 _heater.TurnOn();
             else
                 _heater.TurnOff();
-
+            
         }
 
         public void SetThreshold(int thr)
