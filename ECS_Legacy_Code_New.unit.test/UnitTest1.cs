@@ -28,13 +28,22 @@ namespace ECS_Legacy_Code_New.unit.test
             Assert.That(_fakeHeater.TurnedOnCount, Is.EqualTo(1));
         }
 
+        [Test]
+        public void TestThatECSWillTurnOffHeaterWhenTempIsTooHigh()
+        {
+            _fakeTempSensor.temp = 22;
+            _uut.Regulate();
+            Assert.That(_fakeHeater.TurnedOffCount, Is.EqualTo(1));
+        }
+
         private class fakeHeater : IHeater
         {
             public void TurnOn() { TurnedOnCount++; }
-            public void TurnOff() { TurnedOnCount--; }
+            public void TurnOff() { TurnedOffCount++; }
             public bool RunSelfTest() { return true; }
 
             public int TurnedOnCount = 0;
+            public int TurnedOffCount = 0;
         }
 
         private class fakeTempSensor : ITempSensor
